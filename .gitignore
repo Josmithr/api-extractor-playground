@@ -1,0 +1,5 @@
+node_modules
+api-extractor-temp
+api-reports
+dist
+lerna-debug.log
