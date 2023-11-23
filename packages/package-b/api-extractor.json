@@ -1,3 +1,12 @@
 {
-	"extends": "../../api-extractor-base.json"
+	"extends": "../../api-extractor-base.json",
+	"bundledPackages": ["package-a"],
+	"messages": {
+		"extractorMessageReporting": {
+			"ae-forgotten-export": {
+				"logLevel": "error",
+				"addToApiReportFile": false
+			}
+		}
+	}
 }

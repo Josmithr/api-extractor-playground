@@ -1,3 +1,11 @@
 {
-	"extends": "../../api-extractor-base.json"
+	"extends": "../../api-extractor-base.json",
+	"messages": {
+		"extractorMessageReporting": {
+			"ae-forgotten-export": {
+				"logLevel": "error",
+				"addToApiReportFile": false
+			}
+		}
+	}
 }
