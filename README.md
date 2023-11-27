@@ -25,7 +25,7 @@ export interface Bar extends Foo {...}
 `package-b`'s api-extractor config contains:
 
 ```json
-"bundledPackages": ["Foo"],
+"bundledPackages": ["package-a"],
 ```
 
 and
