@@ -5,10 +5,8 @@ import { Foo } from 'package-a';
  *
  * @public
  */
-export class Bar {
-	public constructor(private readonly foo: Foo) {}
-
-	public toString(): string {
-		return this.foo.bar;
-	}
+export interface Bar {
+	foo: Foo;
 }
+
+// export { Foo } from 'package-a'; // Uncomment to make `ae-incompatible-release-tags` trigger as expected

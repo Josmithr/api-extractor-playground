@@ -3,7 +3,7 @@
 	"bundledPackages": ["package-a"],
 	"messages": {
 		"extractorMessageReporting": {
-			"ae-forgotten-export": {
+			"ae-incompatible-release-tags": {
 				"logLevel": "error",
 				"addToApiReportFile": false
 			}
