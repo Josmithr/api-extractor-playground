@@ -1,7 +1,7 @@
 /**
  * Foo
  *
- * @internal
+ * @alpha
  */
 export interface Foo {
 	bar: string;
