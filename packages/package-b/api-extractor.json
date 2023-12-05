@@ -1,6 +1,5 @@
 {
 	"extends": "../../api-extractor-base.json",
-	"bundledPackages": ["package-a"],
 	"messages": {
 		"extractorMessageReporting": {
 			"ae-incompatible-release-tags": {
