@@ -1,4 +1,0 @@
-{
-	"extends": "../../api-extractor-base.json",
-	"bundledPackages": ["package-a"]
-}

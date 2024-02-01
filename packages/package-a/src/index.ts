@@ -1,2 +1,1 @@
-export { Foo } from './Foo';
-// export { Bar } from './Bar';
+export { Bar } from './sub-directory/Bar';
