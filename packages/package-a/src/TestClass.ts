@@ -149,7 +149,8 @@ export class TestClass<
 	 * @remarks Here are some remarks about the constructor
 	 *
 	 * @param privateProperty - See {@link TestAbstractClass}'s constructor.
-	 * @param protectedProperty - See {@link TestAbstractClass.protectedProperty}.
+	 * @param protectedProperty - Some notes about the parameter.
+	 * See {@link TestAbstractClass.protectedProperty}.
 	 * @param testClassProperty - See {@link TestClass.testClassProperty}.
 	 * @param testClassEventProperty - See {@link TestClass.testClassEventProperty}.
 	 */

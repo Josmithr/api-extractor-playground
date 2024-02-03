@@ -3,7 +3,7 @@
  *
  * @remarks Here are some remarks about the variable
  *
- * @public
+ * @beta
  */
 export const testConst = 42;
 

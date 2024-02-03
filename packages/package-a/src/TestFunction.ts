@@ -17,9 +17,11 @@ import {
  *
  * @remarks This is a test {@link TestInterface | link} to another API member
  *
- * @public
+ * @alpha
  */
-export function testFunction<TTypeParameter>(
+export function testFunction<
+	TTypeParameter extends TestInterface = TestInterface,
+>(
 	testParameter: TTypeParameter,
 	testOptionalParameter?: TTypeParameter,
 ): TTypeParameter {

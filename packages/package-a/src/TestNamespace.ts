@@ -5,12 +5,14 @@ import { TestInterfaceWithTypeParameter } from './TestInterface';
  *
  * @remarks Here are some remarks about the namespace
  *
- * @example Example 1
+ * @example TypeScript Example
+ *
  * ```typescript
  * const foo = bar;
  * ```
  *
- * @example Example 2
+ * @example JavaScript Example
+ *
  * ```javascript
  * const bar = foo
  * ```
@@ -28,14 +30,14 @@ export namespace TestNamespace {
 	/**
 	 * Test Constant
 	 *
-	 * @public
+	 * @beta
 	 */
 	export const TestConst = 'Hello world!';
 
 	/**
 	 * Test interface
 	 *
-	 * @public
+	 * @alpha
 	 */
 	export interface TestInterface
 		extends TestInterfaceWithTypeParameter<TestEnum> {
@@ -52,8 +54,6 @@ export namespace TestNamespace {
 
 	/**
 	 * Test class
-	 *
-	 * @public
 	 */
 	export class TestClass {
 		/**
