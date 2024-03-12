@@ -3,6 +3,7 @@ import { TestMappedType } from './TestType';
 
 /**
  * A test abstract class.
+ * {@label test-class}
  *
  * @public
  */
@@ -23,7 +24,7 @@ export abstract class TestAbstractClass {
 	public abstract get abstractPropertyGetter(): TestMappedType;
 
 	/**
-	 * This is a constructor.
+	 * This is a {@customTag constructor}.
 	 */
 	protected constructor(privateProperty: number, protectedProperty: TestEnum) {
 		this.privateProperty = privateProperty;
