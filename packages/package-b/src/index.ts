@@ -1,13 +1,7 @@
-import { TestEnum } from 'package-a';
+import { Foo as Foo_A } from 'package-a';
+import { Foo as Foo_B } from 'package-a/internal';
 
 /**
- * Bar
- *
  * @public
  */
-export interface Foo {
-	/**
-	 * {@inheritDoc package-a#TestEnum}
-	 */
-	bar: TestEnum;
-}
+export const foo: Foo_A = new Foo_B();

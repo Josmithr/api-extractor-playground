@@ -2,8 +2,23 @@
 	"name": "package-a",
 	"private": true,
 	"version": "0.1.0",
-	"main": "dist/index.js",
 	"type": "module",
+	"exports": {
+		".": {
+			"import": {
+				"types": "./dist/package-a-public.d.ts",
+				"default": "./dist/index.js"
+			}
+		},
+		"./internal": {
+			"import": {
+				"types": "./dist/package-a-untrimmed.d.ts",
+				"default": "./dist/index.js"
+			}
+		}
+	},
+	"main": "dist/index.js",
+	"types": "dist/package-a-public.d.ts",
 	"scripts": {
 		"build": "run-s build:tsc build:api-extractor",
 		"build-clean": "run-s clean build",
