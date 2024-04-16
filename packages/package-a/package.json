@@ -3,6 +3,7 @@
 	"private": true,
 	"version": "0.1.0",
 	"main": "dist/index.js",
+	"type": "module",
 	"scripts": {
 		"build": "run-s build:tsc build:api-extractor",
 		"build-clean": "run-s clean build",
