@@ -2,15 +2,22 @@ This repo is configured with 2 packages with the following dependency relationsh
 
 Both packages are configured to build with Node16 and ESM module resolution.
 
-Package A is leveraging [package.json exports](https://nodejs.org/api/packages.html#exports) to surface 2 variations of its API:
+`package-a` exports the following nominally typed class:
+
+```typescript
+export class Foo {
+	protected readonly iAmNominal?: unknown;
+}
+```
+
+`package-a` is leveraging [package.json exports](https://nodejs.org/api/packages.html#exports) to surface 2 variations of its API:
 
 - public only exports via the package root (`.`)
 - internal (untrimmed) exports via `/internal`.
 
 While this pattern works fine for structurally typed exports, it breaks down for nominally typed exports.
 
-Observe that `package-a` exports a class, `Foo`, which is nominally typed.
-`package-b` then consumes that class, but it does so via a mix of the two export paths (this is a contrived example, but it reflects a scenario that occurs easily with more code modules).
+Observe that `package-b` consumes nominally typed class `Foo`, but it does so via a mix of the two export paths (this is a contrived example, but it reflects a scenario that occurs easily with more code modules).
 `package-b` has the following code:
 
 ```typescript
