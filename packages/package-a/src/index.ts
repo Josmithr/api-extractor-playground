@@ -38,13 +38,13 @@
  * @packageDocumentation
  */
 
-import * as TestModule from './TestModule';
+import * as TestModule from './TestModule.js';
 
-export * from './TestClass';
-export * from './TestConst';
-export * from './TestEnum';
-export * from './TestFunction';
-export * from './TestInterface';
+export * from './TestClass.js';
+export * from './TestConst.js';
+export * from './TestEnum.js';
+export * from './TestFunction.js';
+export * from './TestInterface.js';
 export { TestModule };
-export * from './TestNamespace';
-export * from './TestType';
+export * from './TestNamespace.js';
+export * from './TestType.js';
