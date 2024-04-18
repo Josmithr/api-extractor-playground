@@ -1,5 +1,5 @@
 /**
- * Test package
+ * <b>Test package</b>
  *
  * @remarks
  *

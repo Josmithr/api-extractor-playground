@@ -1,8 +1,10 @@
-import { TestEnum } from './TestEnum';
-import { TestMappedType } from './TestType';
+import { TestEnum } from './TestEnum.js';
+import { TestMappedType } from './TestType.js';
 
 /**
  * A test abstract class.
+ *
+ *
  * {@label test-class}
  *
  * @public
@@ -133,15 +135,20 @@ export class TestClass<
 	 */
 	public readonly testClassEventProperty: () => void;
 
+	private _testClassGetterProperty: number;
+
 	/**
-	 * Test class getter-only property
+	 * Test class property with both a getter and a setter.
 	 *
 	 * @remarks Here are some remarks about the getter-only property
 	 *
 	 * @virtual
 	 */
 	public get testClassGetterProperty(): number {
-		return 42;
+		return this._testClassGetterProperty;
+	}
+	public set testClassGetterProperty(newValue: number) {
+		this._testClassGetterProperty = newValue;
 	}
 
 	/**
@@ -151,6 +158,8 @@ export class TestClass<
 	 *
 	 * @param privateProperty - See {@link TestAbstractClass}'s constructor.
 	 * @param protectedProperty - Some notes about the parameter.
+	 *
+	 *
 	 * See {@link TestAbstractClass.protectedProperty}.
 	 * @param testClassProperty - See {@link TestClass.testClassProperty}.
 	 * @param testClassEventProperty - See {@link TestClass.testClassEventProperty}.
@@ -164,6 +173,7 @@ export class TestClass<
 		super(privateProperty, protectedProperty);
 		this.testClassProperty = testClassProperty;
 		this.testClassEventProperty = testClassEventProperty;
+		this._testClassGetterProperty = 0;
 	}
 
 	/**

@@ -1,4 +1,4 @@
-import { TestEnum } from './TestEnum';
+import { TestEnum } from './TestEnum.js';
 
 /**
  * Test Type-Alias

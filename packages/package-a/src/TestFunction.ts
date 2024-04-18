@@ -1,10 +1,10 @@
-import { testConst } from './TestConst';
-import { TestEnum } from './TestEnum';
+import { testConst } from './TestConst.js';
+import { TestEnum } from './TestEnum.js';
 import {
 	TestEmptyInterface,
 	TestInterface,
 	TestInterfaceWithTypeParameter,
-} from './TestInterface';
+} from './TestInterface.js';
 
 /**
  * Test function

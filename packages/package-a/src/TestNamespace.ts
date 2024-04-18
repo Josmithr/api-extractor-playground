@@ -1,4 +1,4 @@
-import { TestInterfaceWithTypeParameter } from './TestInterface';
+import { TestInterfaceWithTypeParameter } from './TestInterface.js';
 
 /**
  * Test Namespace

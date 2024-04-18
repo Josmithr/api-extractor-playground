@@ -1,4 +1,4 @@
-import { TestMappedType } from './TestType';
+import { TestMappedType } from './TestType.js';
 
 /**
  * Test interface
@@ -72,6 +72,17 @@ export interface TestInterface {
 	 * Test construct signature.
 	 */
 	new (): TestInterface;
+
+	/**
+	 * A test getter-only interface property.
+	 */
+	get getterProperty(): boolean;
+
+	/**
+	 * A test property with a getter and a setter.
+	 */
+	get setterProperty(): boolean;
+	set setterProperty(newValue: boolean);
 }
 
 /**
