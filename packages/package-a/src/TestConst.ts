@@ -12,5 +12,5 @@ export const testConst = 42;
  *
  * @deprecated
  */
-export const testConstWithEmptyDeprecatedBlock =
+export const testConstWithEmptyDeprecatedBlock: string =
 	'I have a `@deprecated` tag with an empty comment block.';
