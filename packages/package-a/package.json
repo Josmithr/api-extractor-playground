@@ -4,6 +4,7 @@
 	"version": "0.1.0",
 	"main": "dist/index.js",
 	"type": "module",
+	"types": "dist/package-a-public.d.ts",
 	"scripts": {
 		"build": "run-s build:tsc build:api-extractor",
 		"build-clean": "run-s clean build",
