@@ -1,13 +1,6 @@
-import { TestEnum } from 'package-a';
+import type { Foo } from 'package-a';
 
 /**
- * Bar
- *
- * @public
+ * @alpha
  */
-export interface Foo {
-	/**
-	 * {@inheritDoc package-a#TestEnum}
-	 */
-	bar: TestEnum;
-}
+export interface Baz extends Foo {}

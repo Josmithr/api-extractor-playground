@@ -5,7 +5,8 @@
 		"enabled": true,
 		"reportFileName": "<unscopedPackageName>.api.md",
 		"reportFolder": "<projectFolder>/api-reports/",
-		"reportTempFolder": "<projectFolder>/api-reports/"
+		"reportTempFolder": "<projectFolder>/api-reports/",
+		"reportVariants": ["public"]
 	},
 	"docModel": {
 		"enabled": true,
