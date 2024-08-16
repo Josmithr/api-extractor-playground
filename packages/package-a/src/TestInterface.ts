@@ -83,6 +83,11 @@ export interface TestInterface {
 	 */
 	get setterProperty(): boolean;
 	set setterProperty(newValue: boolean);
+
+	/**
+	 * {@inheritDoc BadInheritDocTarget}
+	 */
+	propertyWithBadInheritDocTarget: boolean;
 }
 
 /**
