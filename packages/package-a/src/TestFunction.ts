@@ -74,3 +74,35 @@ export function testFunctionReturningIntersectionType(): TestEmptyInterface &
 		testProperty: 3,
 	};
 }
+
+/**
+ * Takes a number and returns a string.
+ * @param value - A number.
+ * @returns A string.
+ */
+export function functionWithOverloads(value: number): string;
+
+/**
+ * Takes a string and returns a boolean.
+ * @param value - A string.
+ * @returns A boolean.
+ */
+export function functionWithOverloads(value: string): boolean;
+
+/**
+ * Takes a boolean and returns a number.
+ * @param value - A boolean.
+ * @returns A number.
+ */
+export function functionWithOverloads(value: boolean): number;
+export function functionWithOverloads(
+	value: string | number | boolean,
+): string | boolean | number {
+	if (typeof value === 'number') {
+		return 'number';
+	} else if (typeof value === 'string') {
+		return true;
+	} else {
+		return 3;
+	}
+}
