@@ -1,10 +1,10 @@
 {
-	"name": "simple-suite-test",
+	"name": "test-suite-a",
 	"private": true,
 	"version": "0.1.0",
 	"main": "dist/index.js",
 	"type": "module",
-	"types": "dist/simple-suite-test-public.d.ts",
+	"types": "dist/test-suite-a-public.d.ts",
 	"scripts": {
 		"build": "run-s build:tsc build:api-extractor",
 		"build-clean": "run-s clean build",
