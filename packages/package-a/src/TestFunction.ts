@@ -65,8 +65,10 @@ export function testFunctionReturningUnionType(): string | TestInterface {
  *
  * @public
  *
- * @deprecated This is a test deprecation notice. Here is a {@link testFunctionReturningUnionType | link} to something
- * else!
+ * @deprecated
+ * This is a test deprecation notice.
+ * Here is a {@link testFunctionReturningUnionType | link} to something else!
+ * And here is a malformed link to nothing: {@link }.
  */
 export function testFunctionReturningIntersectionType(): TestEmptyInterface &
 	TestInterfaceWithTypeParameter<number> {
