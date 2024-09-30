@@ -8,13 +8,19 @@ import { TestInterfaceWithTypeParameter } from './TestInterface.js';
  * @example TypeScript Example
  *
  * ```typescript
- * const foo = bar;
+ * const foo: Foo = {
+ * 	bar: "Hello world!";
+ * 	baz = 42;
+ * };
  * ```
  *
  * @example JavaScript Example
  *
  * ```javascript
- * const bar = foo
+ * const foo = {
+ * 	bar: "Hello world!";
+ * 	baz = 42;
+ * };
  * ```
  *
  * @public
