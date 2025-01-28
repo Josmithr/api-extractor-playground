@@ -130,3 +130,21 @@ export namespace TestNamespace {
 		return testParameter;
 	}
 }
+
+/**
+ * A namespace tagged as `@beta`.
+ * 
+ * @remarks Tests release level inheritance.
+ * 
+ * @beta
+ */
+export namespace TestBetaNamespace {
+	/** @public */
+	export const publicMember = "public";
+	/** @beta */
+	export const betaMember = "beta";
+	/** @alpha */
+	export const alphaMember = "alpha";
+	/** @internal */
+	export const internalMember = "internal";
+}
