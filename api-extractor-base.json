@@ -25,19 +25,27 @@
 		"compilerMessageReporting": {
 			"default": {
 				"logLevel": "error",
-				"addToApiReportFile": true
+				"addToApiReportFile": false
 			}
 		},
 		"extractorMessageReporting": {
 			"default": {
 				"logLevel": "error",
-				"addToApiReportFile": true
+				"addToApiReportFile": false
+			},
+			"ae-unresolved-inheritdoc-reference": {
+				"logLevel": "error",
+				"addToApiReportFile": false
+			},
+			"ae-unresolved-link": {
+				"logLevel": "error",
+				"addToApiReportFile": false
 			}
 		},
 		"tsdocMessageReporting": {
 			"default": {
 				"logLevel": "error",
-				"addToApiReportFile": true
+				"addToApiReportFile": false
 			}
 		}
 	}
