@@ -27,7 +27,7 @@ export class Foo {
 The above are accurate depictions of the type information, but do not sufficiently reflect the usage implications of standard vs type-only exports.
 
 It would be useful to preserve the type-only nature of type-only exports, so that these implications are clear in the reports, and so related API changes are detectable through report changes.
-Something like the following would be useful, if possible:
+Something like the following would be ideal:
 
 ```typescript
 declare class Bar {
