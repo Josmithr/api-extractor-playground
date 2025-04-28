@@ -1,18 +1,16 @@
 {
-	"name": "test-suite-b",
-	"version": "0.1.0",
+	"name": "package-a",
 	"private": true,
+	"version": "0.1.0",
 	"main": "dist/index.js",
 	"type": "module",
+	"types": "dist/package-a-public.d.ts",
 	"scripts": {
 		"build": "run-s build:tsc build:api-extractor",
 		"build-clean": "run-s clean build",
 		"build:api-extractor": "api-extractor run",
 		"build:tsc": "tsc --pretty",
 		"clean": "rimraf dist api-extractor-temp"
-	},
-	"dependencies": {
-		"test-suite-a": "0.1.0"
 	},
 	"devDependencies": {
 		"@microsoft/api-extractor": "~7.52.2",
