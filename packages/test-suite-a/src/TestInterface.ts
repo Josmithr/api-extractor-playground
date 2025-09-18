@@ -156,3 +156,18 @@ export interface TestInterfaceWithIndexSignature {
 	 */
 	[foo: number]: { bar: string };
 }
+
+/**
+ * An interface with a complex call signature.
+ *
+ * @public
+ */
+export interface TestInterfaceWithCallSignature {
+	/**
+	 * Test call signature.
+	 * @typeParam T - A type parameter
+	 * @param foo - A value of type T
+	 * @returns `foo` branded with a number
+	 */
+	<T extends string>(foo: T): number & T;
+}
