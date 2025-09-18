@@ -22,6 +22,7 @@ export abstract class TestAbstractClass {
 
 	/**
 	 * A test abstract getter property.
+	 *
 	 * \@escapedTag
 	 */
 	public abstract get abstractPropertyGetter(): TestMappedType;
