@@ -10,6 +10,27 @@ import { TestEnum } from './TestEnum.js';
 export type TypeAlias = string;
 
 /**
+ * A test type with properties.
+ */
+export type TypeWithProperties = {
+	/**
+	 * Foo
+	 */
+	foo: string;
+	/**
+	 * Bar
+	 * @sealed
+	 */
+	readonly bar: number;
+	/**
+	 * Baz
+	 * @virtual
+	 * @optional
+	 */
+	readonly baz?: boolean;
+};
+
+/**
  * Test Mapped Type, using {@link TestEnum}
  *
  * @remarks Here are some remarks about the mapped type
