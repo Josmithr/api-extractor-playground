@@ -34,3 +34,12 @@ Actual report contents:
 ```ts
 export type Baz = FooInternal;
 ```
+
+Note: if `package-b` also re-exports `FooExternal` from its entry point, the issue does not occur:
+
+```ts
+export type { FooExternal } from 'package-a';
+export type { Baz } from './Baz.js';
+```
+
+With that re-export, the API report and declaration rollup use `FooExternal`, and the `ae-forgotten-export` warning is not reported. Thus, the issue occurs when the aliased API from the bundled dependency is referenced by an exported declaration but is not itself exported from the consumer's entry point.
