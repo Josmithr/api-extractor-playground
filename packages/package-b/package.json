@@ -1,0 +1,23 @@
+{
+	"name": "package-b",
+	"version": "0.1.0",
+	"private": true,
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"type": "module",
+	"scripts": {
+		"build": "run-s build:tsc build:api-extractor",
+		"build:api-extractor": "api-extractor run",
+		"build:tsc": "tsc --pretty",
+		"clean": "rimraf dist api-extractor-temp"
+	},
+	"dependencies": {
+		"package-a": "0.1.0"
+	},
+	"devDependencies": {
+		"@microsoft/api-extractor": "~7.58.1",
+		"npm-run-all": "^4.1.5",
+		"rimraf": "^5.0.7",
+		"typescript": "^5.8.2"
+	}
+}
