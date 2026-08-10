@@ -5,9 +5,7 @@
 ```ts
 
 // @public
-export namespace FooExternal {
-    export type Bar = string;
-}
+export type FooExternal = string;
 
 // (No @packageDocumentation comment for this package)
 

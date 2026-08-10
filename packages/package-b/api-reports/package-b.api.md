@@ -7,7 +7,7 @@
 // Warning: (ae-forgotten-export) The symbol "FooInternal" needs to be exported by the entry point index.d.ts
 //
 // @public
-export type Baz = FooInternal.Bar;
+export type Baz = FooInternal;
 
 // (No @packageDocumentation comment for this package)
 
